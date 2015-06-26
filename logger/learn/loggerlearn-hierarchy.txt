@@ -1,0 +1,4 @@
+Logger Hierarchy:
+----------------
+ The logger instances are organized into a hierarchy. A logger funrhter down in the hierarchy will forward message logged to it, to its ancestors in the hierarchy. thus, log levels and message can be filtered or switched on and off for entire branches of the logger hierarchy at a time.
+ 

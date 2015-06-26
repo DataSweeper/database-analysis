@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-dictionary name="test">
+	<table name="testing">
+		<description>User Info</description>
+		<columns>
+			<column name="test1">
+				<description>User ID</description>
+				<data-type>BIGINT</data-type>
+				<nullable>false</nullable>
+			</column>
+			<column name="test2">
+				<description>Email id</description>
+				<data-type>CHAR</data-type>
+				<max-size>100</max-size>
+			</column>
+		</columns>
+		<primary-key name="testing_pk">
+			<primary-key-column>test1</primary-key-column>
+		</primary-key>
+	</table>
+</data-dictionary>

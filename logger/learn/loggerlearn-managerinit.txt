@@ -1,0 +1,3 @@
+Logger manager:
+--------------
+The LogManager is a component. The LogManager holds the Logger hierarchy, and also a global logging configuration, which can be read from a file.

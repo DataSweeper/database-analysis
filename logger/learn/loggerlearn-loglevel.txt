@@ -1,0 +1,3 @@
+Log Level:
+----------
+  Whenever a message is logged, the message will logged with certain log level. The level is an integer which determain how important the message is. Logger can have minimum log level to take decision on sending to handler.

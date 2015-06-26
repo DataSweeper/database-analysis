@@ -1,0 +1,8 @@
+java.util.logging
+------------------
+<img src=http://tutorials.jenkov.com/images/java-logging/overview.png />
+
+Logger instance. gtheres data to be logged in to logger logRecord. logRecord will forward to a Handler. Handler will deterain what to do with logRecord.
+
+Hander has formatter to format the logrecord as a string before send to external disk or system.
+

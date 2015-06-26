@@ -1,0 +1,36 @@
+basci Usage.
+------------
+The most comman way is logging api is to create logger instance in each class that needs to log. this instance typically made static and final, meaning all instance of that class will the same logger instance.
+
+<code>
+public class LoggingExamples {
+
+    private static final Logger logger =
+        Logger.getLogger(LoggingExamples.class.getName());
+
+}
+</code>
+
+<code>
+public class LoggingExamples {
+
+    private static final Logger logger =
+        Logger.getLogger(LoggingExamples.class.getName());
+
+
+    public void doIt() {
+        logger.entering(getClass().getName(), "doIt");
+
+        try{
+            //... something that can throw an exception
+        } catch (Exception e) {
+            logger.log(Level.SEVERE, "Error doing XYZ", e);
+        }
+
+        logger.exiting(getClass().getName(), "doIt");
+    }
+
+}
+</code>
+
+
